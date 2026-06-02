@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercise 1.2 - Downloaded Bootstrap files (sample)</title>
+
+    <!--
+      Exercise 1.2 expects you to use downloaded Bootstrap files.
+
+      Suggested structure:
+      BOOTSTRAP/
+        vendor/bootstrap/
+          css/bootstrap.min.css
+          js/bootstrap.bundle.min.js
+          fonts/...
+
+      This sample references those local files. If you haven't downloaded Bootstrap yet,
+      create the folder and place the files accordingly.
+    -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="mb-3">Exercise 1.2</h1>
+      <p class="lead">This page links Bootstrap CSS from local downloaded files.</p>
+
+      <div class="alert alert-success" role="alert">
+        If you placed <code>vendor/bootstrap/css/bootstrap.min.css</code> correctly, this alert will be styled by Bootstrap.
+      </div>
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demoCollapse">
+        Toggle collapse
+      </button>
+      <div class="collapse mt-3" id="demoCollapse">
+        <div class="card card-body">Bootstrap JS plugins require bootstrap.bundle.min.js.</div>
+      </div>
+    </div>
+
+    <!-- Local downloaded JS (required for JS plugins) -->
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
